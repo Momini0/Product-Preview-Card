@@ -4,6 +4,6 @@ Users should be able to
 -View the optimal layout depending on their device's screen size
 -See hover and focus states for interactive elements
 
-Live Site URL: [Add live site URL here](https://momini0.github.io/Product-Preview-Card/)
+Live Site URL: [https://momini0.github.io/Product-Preview-Card/]
 
-Author:(https://www.frontendmentor.io/profile/Momini0)
+Author:[https://www.frontendmentor.io/profile/Momini0]

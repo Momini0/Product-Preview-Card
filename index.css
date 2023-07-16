@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
+
+:root{
+    --cost: hsl(158, 36%, 37%);
+    --background: hsl(30, 38%, 92%);
+    --name: hsl(212, 21%, 14%);
+    --description: hsl(228, 12%, 48%);
+    --white: hsl(0,0%,100%);
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background);
+    font-family: 'Montserrat',sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 600px;
+    border-radius: 20px;
+    margin: 16px;
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+}
+.image{
+    height: 450px;
+    content: url(./images/image-product-desktop.jpg);
+}
+.content{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.type{
+    color: var(--description);
+    font-size: 14px;
+}
+.name{
+    font-family: 'Fraunces',sans-serif;
+    color: var(--name);
+}
+.description{
+    color: var(--description);
+    line-height: 20px;
+    font-size: 14px;
+}
+.cost{
+    display: flex;
+    align-items: center;
+}
+.cost-current{
+    color:var(--cost);
+    font-size: 36px;
+    font-family: 'Fraunces',sans-serif;
+    font-weight: 700;
+}
+.cost-before{
+    color: var(--description);
+    margin-left: 10px;
+    text-decoration: line-through;
+}
+.add-to-cart-button{
+    width: 100%;
+    height: 50px;
+    background-color: var(--cost);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.add-to-cart-button:hover{
+    background-color: var(--title);
+}
+
+@media (max-width:630px)
+{
+    .card{
+        flex-direction: column;
+    }
+    .image{
+        height: 235px;
+        content: url(./images/image-product-mobile.jpg);
+    }
+}
